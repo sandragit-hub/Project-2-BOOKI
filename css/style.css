@@ -162,6 +162,26 @@ ul {
     margin-bottom: 5px;
 }
 
+/*----Footer-----*/
+
+footer {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    padding: 10px 35px;
+}
+
+.footer-menu {
+    width: 32%;
+}
+
+.footer-menu ul {
+    padding-left: 0px;
+    line-height: 30px;
+}
+
 
 
 
