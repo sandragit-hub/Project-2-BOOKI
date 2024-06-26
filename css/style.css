@@ -222,6 +222,10 @@ font-size: 17px;
     line-height: 18.78px;
     text-align: left;
     } 
+
+    .sytles-filter:hover {
+        background-color: #DEEBFF;
+    }
     
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
