@@ -51,6 +51,10 @@ a {
 
 .card-activity {
     width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.1px;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
@@ -259,12 +263,6 @@ font-size: 17px;
     justify-content: space-around; 
 }
 
-.second-row {
-    display: flex;
-    justify-content: center;
-
-}
-
 .hebergements-title {
     display: flex;
     justify-content: space-between;
@@ -364,7 +362,52 @@ font-size: 17px;
     margin-bottom: 5px;
 }
 
+/*----Activity----*/
 
+.activity {
+    margin-left: 10px;
+}
+.activity-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:20px;
+    margin-bottom: 70px;
+}
+
+.activity-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title-activity {
+    margin-top: 70px;
+    margin-left: 11px;
+    margin-bottom: 3px;
+}
+
+.activity-cards .card-activity {
+     margin-top: 33px;
+   
+ }
+
+.activity-cards img {
+    height: 388px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activity-cards .card-content {
+    width: 250px;
+    padding-left: 15px;
+    
+}
+
+.card-title-activity {
+    margin-left: 20px;
+}
 /*----Footer-----*/
 
 footer {
