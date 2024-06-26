@@ -39,7 +39,18 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
+}
+
+.card-heberg {
+    width: 250px;
+    height: 220px;
+    box-sizing: border-box;
+   
+}
+
+.card-activity {
+    width: 300px;
 }
 
 .card img {
@@ -49,6 +60,8 @@ a {
 .card-title {
     font-size: 16px;
 }
+
+
 
 .euro {
     font-weight: 700;
@@ -238,7 +251,72 @@ font-size: 17px;
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 67%;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.hebergements-cards .card-heberg {
+     margin-top: 33px;
+     display: flex;
+     flex-direction: column;  
+ }
+     
+.hebergements-cards img {
+    width: 100%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 200px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-content: space-around;
+    margin-bottom: 10px;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+    
+}
+
+.button-afficher {
+  font:  700 18px "Raleway", sans-serif;;
+  margin-top: 40px;
+  margin-left: 15px;
+  padding: 0;
+  border: none;
+  background-color: var(--main-bg-color);
 }
 
 /****** Populaires ***********/
@@ -273,7 +351,7 @@ font-size: 17px;
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires-cards .card-pop-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
@@ -285,6 +363,7 @@ font-size: 17px;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
 
 /*----Footer-----*/
 
