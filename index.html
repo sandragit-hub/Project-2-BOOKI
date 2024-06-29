@@ -19,18 +19,17 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <div class="main-container">
       <header>
-        <img src="images/logo/Booki.png" alt="logo" id="logo-booki" />
+        <img src="images/logo/Booki.png" alt="logo" class="logo-booki" />
         <nav class="menu-nav">
           <ul>
             <li>
-              <a href="index.html#Hébergements"> Hébergements</a>
+              <a href="#hebergements"> Hébergements</a>
             </li>
             <li>
-              <a href="index.html#Activités"> Activités</a>
+              <a href="#activity"> Activités</a>
             </li>
           </ul>
         </nav>
@@ -51,7 +50,10 @@
             placeholder="Ville, Pays"
             value="Marseille, France"
           />
-          <button id="button">Rechercher</button>
+          <button class="button">Rechercher</button>
+          <button class="glass-button">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </button>
         </form>
         <div>
           <div class="filter-bar">
@@ -81,14 +83,14 @@
           </div>
         </div>
         <div class="hebergements-and-populaires">
-          <section class="hebergements">
+          <section class="hebergements" id="hebergements">
             <div class="hébergements-title">
               <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
             <div class="hebergements-cards">
               <div class="first-row">
-                <a href="#">
-                  <article class="card card-heberg">
+                <a class="card card-heberg" href="#">
+                  <article>
                     <img
                       src="./images/hebergements/fred-kleber.jpg"
                       alt="Image de la chambre d'hôtel montrant un lit"
@@ -126,8 +128,8 @@
                     </div>
                   </article>
                 </a>
-                <a href="#">
-                  <article class="card card-heberg">
+                <a class="card card-heberg" href="#">
+                  <article>
                     <img
                       src="./images/hebergements/febrian-zakaria.jpg"
                       alt="Image de la chambre d'hôtel montrant un lit"
@@ -165,8 +167,8 @@
                     </div>
                   </article>
                 </a>
-                <a href="#">
-                  <article class="card card-heberg">
+                <a class="card card-heberg" href="#">
+                  <article>
                     <img
                       src="./images/hebergements/reisetopia.jpg"
                       alt="Image de la chambre d'hôtel montrant un lit"
@@ -206,8 +208,8 @@
                 </a>
               </div>
               <div class="first-row">
-                <a href="#">
-                  <article class="card card-heberg">
+                <a class="card card-heberg" href="#">
+                  <article>
                     <img
                       src="./images/hebergements/annie-spratt.jpg"
                       alt="Image de la chambre d'hôtel montrant un lit"
@@ -245,8 +247,8 @@
                     </div>
                   </article>
                 </a>
-                <a href="#">
-                  <article class="card card-heberg">
+                <a class="card card-heberg" href="#">
+                  <article>
                     <img
                       src="./images/hebergements/marcus-loke.jpg"
                       alt="Image de la chambre d'hôtel montrant un lit"
@@ -284,8 +286,8 @@
                     </div>
                   </article>
                 </a>
-                <a href="#">
-                  <article class="card card-heberg">
+                <a class="card card-heberg" href="#">
+                  <article>
                     <img
                       src="./images/hebergements/nicate-lee.jpg"
                       alt="Image de la chambre d'hôtel montrant un lit"
@@ -326,7 +328,7 @@
               </div>
             </div>
             <div class="afficher-plus">
-              <button class="button-afficher">Afficher plus</button>
+              <a href="#"> Afficher plus</a>
             </div>
           </section>
           <section class="populaires">
@@ -422,40 +424,44 @@
           </section>
         </div>
       </main>
-      <aside>
-        <section class="Activity">
+      <aside id="activity">
+        <section class="activity">
           <h2 class="title-activity">Activités à Marseille</h2>
-          <div class="activity-cards">
-            <a href="#">
-              <article class="card-activity">
+          <div class="container-activity-cards">
+            <a class="card card-activity" href="#">
+              <article>
                 <img
+                  class="card-img-activities"
                   src="images/activites/reno-laithienne.jpg"
                   alt="image montrant un port avec des bateaux"
                 />
                 <h3 class="card-title-activity">Vieux Port</h3>
               </article>
             </a>
-            <a href="#">
-              <article class="card-activity">
+            <a class="card card-activity" href="#">
+              <article>
                 <img
+                  class="card-img-activities"
                   src="images/activites/paul-hermann.jpg"
                   alt="image montrant un fort"
                 />
                 <h3 class="card-title-activity">Fort de Pomègue</h3>
               </article>
             </a>
-            <a href="#">
-              <article class="card-activity">
+            <a class="card card-activity" href="#">
+              <article>
                 <img
+                  class="card-img-activities"
                   src="images/activites/kilyan-sockalingum.jpg"
                   alt="image montrant un parc avec des montagnes et la mer"
                 />
                 <h3 class="card-title-activity">Parc national des Calanques</h3>
               </article>
             </a>
-            <a href="#">
-              <article class="card-activity">
+            <a class="card card-activity" href="#">
+              <article>
                 <img
+                  class="card-img-activities"
                   src="images/activites/florian-wehde.jpg"
                   alt="image montrant une catédrale en haut d'une colline"
                 />
@@ -470,17 +476,13 @@
           <h2>À propos</h2>
           <ul>
             <li>
-              <a href="index.html#fonctionnement du site">
-                Fonctionnement du site</a
-              >
+              <a href="#fonctionnementdusite"> Fonctionnement du site </a>
             </li>
             <li>
-              <a href="index.html#Conditions générales">
-                Conditions générales
-              </a>
+              <a href="#Conditionsgenerales"> Conditions générales </a>
             </li>
             <li>
-              <a href="index.html#Données et fonctionnalités">
+              <a href="#Donneesetfonctionnalites">
                 Données et fonctionnalités</a
               >
             </li>
@@ -489,19 +491,17 @@
         <section class="footer-menu">
           <h2>Nos Hébergements</h2>
           <ul>
-            <li><a href="index.html#Charte qualité"> Charte qualité </a></li>
+            <li><a href="#Chartequalite"> Charte qualité </a></li>
             <li>
-              <a href="index.html#Proposez votre hôtel">
-                Proposez votre hôtel
-              </a>
+              <a href="#Proposezvotrehotel"> Proposez votre hôtel </a>
             </li>
           </ul>
         </section>
         <section class="footer-menu">
           <h2>Assistance</h2>
           <ul>
-            <li><a href="index.html#Centre d'aide"> Centre d'aide</a></li>
-            <li><a href="index.html#Nous contacter"> Nous contacter </a></li>
+            <li><a href="#Centredaide"> Centre d'aide</a></li>
+            <li><a href="#Nouscontacter"> Nous contacter </a></li>
           </ul>
         </section>
       </footer>
