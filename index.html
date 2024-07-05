@@ -19,10 +19,13 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <div class="main-container">
       <header>
-        <img src="images/logo/Booki.png" alt="logo" class="logo-booki" />
+        <div class="logo">
+          <img src="images/logo/Booki.png" alt="logo" class="logo-booki" />
+        </div>
         <nav class="menu-nav">
           <ul>
             <li>
@@ -35,45 +38,52 @@
         </nav>
       </header>
       <main>
-        <section>
-          <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-          <p>En plein centre ville ou en pleine nature</p>
+        <section class="form-search">
+          <div class="title">
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+          </div>
+          <form id="search-barre">
+            <i
+              class="fa-solid fa-location-dot search-map"
+              style="color: #00364a"
+            ></i>
+            <input
+              id="input-search"
+              type="get"
+              placeholder="Ville, Pays"
+              value="Marseille, France"
+            />
+            <button id="search-desktop">Rechercher</button>
+            <button id="search-mobile">
+              <i class="fas fa-search search-icon"></i>
+            </button>
+          </form>
         </section>
-        <form id="search-barre">
-          <i
-            class="fa-solid fa-location-dot search-map"
-            style="color: #00364a"
-          ></i>
-          <input
-            id="input-search"
-            type="text"
-            placeholder="Ville, Pays"
-            value="Marseille, France"
-          />
-          <button class="button">Rechercher</button>
-          <button class="glass-button">
-            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-          </button>
-        </form>
-        <div>
+        <div class="info">
           <div class="filter-bar">
             <p class="text-filter">Filtres</p>
-            <button class="filter-button position-filter sytles-filter">
-              <i class="fa-solid fa-money-bill-wave" style="color: #0061ff"></i>
-              Economique
-            </button>
-            <button class="filter-button position-filter sytles-filter">
-              <i class="fa-solid fa-person" style="color: #0061ff"></i>
-              Familiale
-            </button>
-            <button class="filter-button position-filter sytles-filter">
-              <i class="fa-solid fa-heart" style="color: #0061ff"></i>
-              Romantique
-            </button>
-            <button class="filter-button position-filter sytles-filter">
-              <i class="fa-solid fa-fire" style="color: #0061ff"></i>
-              Nos Pépites
-            </button>
+            <div class="all-buttons">
+              <button class="filter-button position-filter sytles-filter">
+                <i
+                  class="fa-solid fa-money-bill-wave"
+                  style="color: #0061ff"
+                ></i>
+                Economique
+              </button>
+              <button class="filter-button position-filter sytles-filter">
+                <i class="fa-solid fa-person" style="color: #0061ff"></i>
+                Familiale
+              </button>
+              <button class="filter-button position-filter sytles-filter">
+                <i class="fa-solid fa-heart" style="color: #0061ff"></i>
+                Romantique
+              </button>
+              <button class="filter-button position-filter sytles-filter">
+                <i class="fa-solid fa-fire" style="color: #0061ff"></i>
+                Nos Pépites
+              </button>
+            </div>
           </div>
           <div class="info-filter">
             <i class="fa-solid fa-info img-info" style="color: #0061ff"></i>
@@ -93,7 +103,7 @@
                   <article>
                     <img
                       src="./images/hebergements/fred-kleber.jpg"
-                      alt="Image de la chambre d'hôtel montrant un lit"
+                      alt="Image d'une chambre d'hôtel avec un lit et un bureau"
                     />
                     <div class="card-content">
                       <div class="card-txt">
@@ -132,7 +142,7 @@
                   <article>
                     <img
                       src="./images/hebergements/febrian-zakaria.jpg"
-                      alt="Image de la chambre d'hôtel montrant un lit"
+                      alt="Image d'une chambre d'hôtel montrant un lit près d'une armoire"
                     />
                     <div class="card-content">
                       <div class="card-txt">
@@ -212,7 +222,7 @@
                   <article>
                     <img
                       src="./images/hebergements/annie-spratt.jpg"
-                      alt="Image de la chambre d'hôtel montrant un lit"
+                      alt="Image de la chambre d'hôtel montrant un lit double avec thème plage"
                     />
                     <div class="card-content">
                       <div class="card-txt">
@@ -251,7 +261,7 @@
                   <article>
                     <img
                       src="./images/hebergements/marcus-loke.jpg"
-                      alt="Image de la chambre d'hôtel montrant un lit"
+                      alt="Image d'un chambre d'auberge montrant un lit superposé"
                     />
                     <div class="card-content">
                       <div class="card-txt">
@@ -290,7 +300,7 @@
                   <article>
                     <img
                       src="./images/hebergements/nicate-lee.jpg"
-                      alt="Image de la chambre d'hôtel montrant un lit"
+                      alt="Image d'une chambre d'auberge montrant deux lits superposé"
                     />
                     <div class="card-content">
                       <div class="card-txt">
@@ -428,7 +438,7 @@
         <section class="activity">
           <h2 class="title-activity">Activités à Marseille</h2>
           <div class="container-activity-cards">
-            <a class="card card-activity" href="#">
+            <a class="card-activity" href="#">
               <article>
                 <img
                   class="card-img-activities"
@@ -438,7 +448,7 @@
                 <h3 class="card-title-activity">Vieux Port</h3>
               </article>
             </a>
-            <a class="card card-activity" href="#">
+            <a class="card-activity" href="#">
               <article>
                 <img
                   class="card-img-activities"
@@ -448,7 +458,7 @@
                 <h3 class="card-title-activity">Fort de Pomègue</h3>
               </article>
             </a>
-            <a class="card card-activity" href="#">
+            <a class="card-activity" href="#">
               <article>
                 <img
                   class="card-img-activities"
@@ -458,7 +468,7 @@
                 <h3 class="card-title-activity">Parc national des Calanques</h3>
               </article>
             </a>
-            <a class="card card-activity" href="#">
+            <a class="card-activity" href="#">
               <article>
                 <img
                   class="card-img-activities"
@@ -476,32 +486,30 @@
           <h2>À propos</h2>
           <ul>
             <li>
-              <a href="#fonctionnementdusite"> Fonctionnement du site </a>
+              <a href="#"> Fonctionnement du site </a>
             </li>
             <li>
-              <a href="#Conditionsgenerales"> Conditions générales </a>
+              <a href="#"> Conditions générales </a>
             </li>
             <li>
-              <a href="#Donneesetfonctionnalites">
-                Données et fonctionnalités</a
-              >
+              <a href="#"> Données et fonctionnalités</a>
             </li>
           </ul>
         </section>
         <section class="footer-menu">
           <h2>Nos Hébergements</h2>
           <ul>
-            <li><a href="#Chartequalite"> Charte qualité </a></li>
+            <li><a href="#"> Charte qualité </a></li>
             <li>
-              <a href="#Proposezvotrehotel"> Proposez votre hôtel </a>
+              <a href="#"> Proposez votre hôtel </a>
             </li>
           </ul>
         </section>
         <section class="footer-menu">
           <h2>Assistance</h2>
           <ul>
-            <li><a href="#Centredaide"> Centre d'aide</a></li>
-            <li><a href="#Nouscontacter"> Nous contacter </a></li>
+            <li><a href="#"> Centre d'aide</a></li>
+            <li><a href="#"> Nous contacter </a></li>
           </ul>
         </section>
       </footer>
